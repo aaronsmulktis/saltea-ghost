@@ -1,5 +1,8 @@
-# Paperleaf
+# Saltea Blog
 
-The theme for [Ghost](http://github.com/tryghost/ghost/).
+Musings and information about salt and water and every other imaginable ingredient.
 
-To download, visit our [site](http://www.nvslbs.com).
+Based on the theme for [Ghost](http://github.com/tryghost/ghost/).
+
+# URL
+http://blog.saltea.co

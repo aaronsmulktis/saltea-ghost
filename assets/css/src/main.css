@@ -2,6 +2,9 @@
 @import url(https://fonts.googleapis.com/css?family=Karla:400,700,400italic,700italic);
 @import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
 
+/* Icons */
+@import "black-tie.min.css";
+
 /* BassCSS */
 @import 'normalize.css';
 @import 'basscss';
@@ -154,6 +157,19 @@ button {
   height: inherit;
 }
 
+.back-link {
+  display: none;
+  color: var(--black);
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+@media (--breakpoint-xs) {
+  .back-link {
+    display: block;
+  }
+}
+
 .blog-logo {
   display: block;
 }
@@ -194,7 +210,7 @@ button {
   text-align: center;
 }
 
-.copyright a {color: black !important}
+.copyright a {color: var(--black) !important}
 .copyright a:hover {text-decoration: underline;}
 
 @media (--breakpoint-lg) {
@@ -356,6 +372,7 @@ button {
 
 .nav {
   display: none;
+  font-family: var(--heading-font-family);
 }
 .nav.is-visible {
   display: block;

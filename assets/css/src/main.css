@@ -1,3 +1,7 @@
+/* Fonts */
+@import url(https://fonts.googleapis.com/css?family=Karla:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
+
 /* BassCSS */
 @import 'normalize.css';
 @import 'basscss';

@@ -9,9 +9,9 @@
 
 :root {
 
-  --font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  --font-family: 'Inconsolata', Helvetica, sans-serif;
   --line-height: 1.5;
-  --heading-font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  --heading-font-family: 'Karla', Helvetica, sans-serif;
   --heading-font-weight: 700;
   --heading-line-height: 1.25;
   --monospace-font-family: monospace;

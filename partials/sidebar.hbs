@@ -6,6 +6,7 @@
         <header class="main-header">
             {{#if @blog.logo}}
                 <a class="blog-logo mt0 hop5" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>
+                <h1>{{@blog.title}}</h1>
             {{else}}
                 {{#is "home"}}
                     <h1 class="page-title h1 mt0"><a class="black" href="{{@blog.url}}">{{@blog.title}}</a></h1>
@@ -13,14 +14,14 @@
                     <h2 class="page-title h1 mt0"><a class="black" href="{{@blog.url}}">{{@blog.title}}</a></h2>
                 {{/is}}
             {{/if}}
-            <h2 class="page-description h3 light mb3">{{@blog.description}}</h2>
+            <h3 class="page-description h3 light mb3">{{@blog.description}}</h3>
         </header>
         {{navigation}}
 
     </div>
 
     <footer class="sidebar-footer h6 clearfix light border-box lg-show js-sidebar-footer">
-        <div class="copyright"><a href="{{@blog.url}}">Saltea, Ltd.</a> &copy; 2015-{{date format="YYYY"}}</div>
+        <div class="copyright"><a href="http://saltea.co">Saltea, Ltd.</a> &copy; 2015-{{date format="YYYY"}}</div>
         {{!-- <div class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a><br>and Paperleaf theme by <a href="http://www.nvslbs.com">NvsLbs</a></div> --}}
     </footer>
 

@@ -1660,6 +1660,10 @@ input[type=search] {
   max-width: 20rem;
   text-align: center;
 }
+
+.copyright a {color: black !important}
+.copyright a:hover {text-decoration: underline;}
+
 @media (min-width: 64em) {
   .sidebar-search .search-field {
     text-align: right;

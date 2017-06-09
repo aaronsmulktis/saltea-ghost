@@ -1,6 +1,7 @@
 // ----- Define workers -----
 
 var gulp             = require('gulp');
+var install          = require("gulp-install");
 var livereload       = require('gulp-livereload');
 var sourcemaps       = require('gulp-sourcemaps');
 var postcss          = require('gulp-postcss');
@@ -16,6 +17,10 @@ var simpleExtend     = require('postcss-extend');
 
 
 // ----- Tasks -----
+
+gulp.task('install', function() {
+  gulp.src(['bower.json', 'package.json']).pipe(install());
+}); 
 
 // Combine all js plugins from src folder
 gulp.task('concat-plugins', function() {

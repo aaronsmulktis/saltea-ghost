@@ -1515,6 +1515,36 @@ hr {
 
   /* Colors */
 
+  // Wiggle
+  @-ms-keyframes wiggle {
+    0% {
+      -ms-transform: rotate(5deg);
+    }
+    15% {
+      -ms-transform: rotate(-5deg);
+    }
+    25% {
+      -ms-transform: rotate(5deg);
+    }
+    50% {
+      -ms-transform: rotate(0deg);
+    }
+  }
+  @keyframes wiggle {
+    0% {
+      transform: rotate(5deg);
+    }
+    15% {
+      transform: rotate(-5deg);
+    }
+    25% {
+      transform: rotate(5deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+  }
+
 }
 
 html {
@@ -1605,8 +1635,11 @@ input[type=search] {
 .hop5 {
   transition: opacity .4s;
 }
+
 .hop5:hover {
-  opacity: 0.5;
+  // opacity: 0.5;
+  animation: wiggle 1.5s infinite;
+  // -webkit-animation-fill-mode: forwards;
 }
 
 .box-shadow {
